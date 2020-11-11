@@ -1,0 +1,42 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100vh;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-tabs > li > a {
+	border: 1.5px solid rgba(41, 41, 41, 0.2);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+    color: rgba(41, 41, 41, 1);
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+/*individual tabs*/
+li {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	list-style-type: none;
+}
+
+/*text of active tab*/
+.nav-tabs > li.active > a {
+	color: blue;
+	border: 1.5px solid rgba(41, 41, 41, 0.2);
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 10px;
+    padding-bottom: 0;
+}
