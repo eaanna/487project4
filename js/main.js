@@ -5,31 +5,36 @@
 */
 
 var teams = {
- teamName: [],
- teamCity: [],
- teamRegion: [],
- teamLeague: [],
- teamLat: [],
- teamLong: []
+  teamName: [],
+  teamCity: [],
+  teamRegion: [],
+  teamLeague: [],
+  teamLat: [],
+  teamLong: [],
+  teamStadium: []
 };
 let myMap;
 
 
 function loadJSON() {
   $.getJSON("mlbteams.json", function (mlb) {
-      console.log(mlb);
-      parseData(mlb);
+    console.log(mlb);
+    parseData(mlb);
   });
+
+  //$('.modal-body').html("hello world");
+  // $('#moreInfo').modal('show');
 }
 
 function parseData(mlb) {
-  mlb.forEach(function(f) {
-   teams.teamName.push(f.name);
-   teams.teamCity.push(f.city);
-   teams.teamRegion.push(f.region);
-   teams.teamLeague.push(f.league);
-   teams.teamLat.push(f.latitude);
-   teams.teamLong.push(f.longitude);
+  mlb.forEach(function (f) {
+    teams.teamName.push(f.name);
+    teams.teamCity.push(f.city);
+    teams.teamRegion.push(f.region);
+    teams.teamLeague.push(f.league);
+    teams.teamLat.push(f.latitude);
+    teams.teamLong.push(f.longitude);
+    teams.teamStadium.push(f.stadium);
   });
 
   console.log(teams);
@@ -38,12 +43,10 @@ function parseData(mlb) {
 
 let items = Object.keys(teams);
 console.log(items);
-// ["key1", "key2", "key3"]
 items.map(key => {
- let value = teams[key];
- console.log(key, value)
-}); 
-
+  let value = teams[key];
+  console.log(key, value)
+});
 
 
 
@@ -56,61 +59,177 @@ function initMap() {
   console.log(items);
   console.log(teams.teamLat);
   for (var i = 0; i < teams.teamLat.length; i++) {
-        latLng = new google.maps.LatLng(teams.teamLat[i], teams.teamLong[i]); 
+    latLng = new google.maps.LatLng(teams.teamLat[i], teams.teamLong[i]);
     // Creating a marker and putting it on the map
     var marker = new google.maps.Marker({
       position: latLng,
       map: myMap,
-      icon: 'img/marker2.png', 
+      icon: 'img/marker2.png',
       title: teams.teamName[i]
     });
-   
+
+    if (teams.teamLeague[i] === "National League") {
+      marker.icon = 'img/marker2.png';
+    } else {
+      marker.icon = 'img/marker3.png';
+    }
+
     // Attaching a click event to the current marker
-    ( function (marker, teams) {
-      console.log(teams.teamName[i]);
-      var html = 'hi';
-      var infoWindow = new google.maps.InfoWindow( {
+    (function (marker, teams) {
+      // console.log(teams.teamName[i]);
+
+      var modalContent = teams.teamName[i];
+      modalContent = modalContent.replace(/\s/g, "");
+      console.log(modalContent);
+
+
+      var html = '';
+      html += '<div id="popup">';
+      html += '<p>Team Name: ' + teams.teamName[i] + '</p>';
+      html += '<p>City: ' + teams.teamCity[i] + '</p>';
+      html += '<p>League: ' + teams.teamLeague[i] + '</p>';
+      html += '<p>League Region: ' + teams.teamRegion[i] + '</p>';
+      // html += '<img src="' + teams.teamStadium[i] + '" alt="baseball stadium">';
+      html += '<a id="moreInfo" data-toggle="modal" href="#' + modalContent + '">More Information</a>';
+      html += '</div>';
+
+
+      var infoWindow = new google.maps.InfoWindow({
         content: html
       });
-    google.maps.event.addListener(marker, "click", function(e) {
-   //   infoWindow.setContent(teams.teamName[i]);
-      infoWindow.open(map, marker);
-      console.log(teams.teamName[i]);
-      console.log(marker);
-    });
-  }) (marker, teams);
+      google.maps.event.addListener(marker, "click", function (e) {
+        //   infoWindow.setContent(teams.teamName[i]);
+        infoWindow.open(map, marker);
+        console.log(marker);
+
+      });
+
+      $(function () {
+        var dialog = $(modalContent).dialog();
+        //$('a.image_links').on('click', function(e){
+        $(document).on('click', 'a#moreInfo', function () {
+          //e.preventDefault();
+          //alert($(this).data('image'));
+          // var image_src = $(this).data('image');
+          // $(modalContent).attr("src", image_src);
+          $(dialog).dialog('open');
+        });
+  
+        $(dialog).dialog('close');
+  
+      })
+
+    })(marker, teams);
+
+    // $('#' + modalContent).append(html);
+
+    /* for (var i = 0; i < teams.teamLat.length; i++) {
+       var modalContent = teams.teamName[i];
+       modalContent = modalContent.replace(/\s/g, "");
+       console.log(modalContent);
+   
+       $('#' + modalContent).modal('show');
+     } */
 
   }
-
- 
-
 }
 
 
-$('#table1').DataTable( {
+//$('.modal-body').html(test);
+
+
+
+
+
+$('#table1').DataTable({
   "ajax": 'mlbteams2.json',
   "columns": [
-      { "data": "name"},
-      { "data": "city"},
-      {"data": "region"},
-      { "data": "league"},
-      { "data": "latitude"},
-      { "data": "longitude"}
+    { "data": "name" },
+    { "data": "city" },
+    { "data": "region" },
+    { "data": "league" },
+    { "data": "latitude" },
+    { "data": "longitude" }
   ]
-} );
-
-
-/*var marker = new google.maps.Marker({
-  map: myMap,
-  icon: 'img/marker2.png',
-  position: {
-    lat: 40,
-    lng: -99 
-    // add teamLat and teamLong here
-    // got a "not a num error"
-  }
 });
-*/
 
+$('#timeline').timespace({
+
+  // 24-hour timeline
+  data: {
+    headings: [
+      { start: 1900, end: 2020, title: 'Timeline of MLB Team Franchises' }
+    ],
+    events: [
+      {
+        start: 1980,
+        title: 'Breakfast',
+        description: 'Eat a healthy breakfast.',
+      },
+      { start: 1950, end: 2000, title: 'Walk', description: 'Go for a walk.' },
+      { start: 1903, title: 'Lunch', description: 'Eat a healthy lunch.' }
+    ]
+  },
+
+  // max width in pixels
+  maxWidth: 1000,
+
+  // max height in pixels
+  maxHeight: 280,
+
+  // the amount of pixels to move the Timespace on navigation
+  // 0 to disable
+  navigateAmount: 200,
+
+  // The multiplier to use with navigateAmount when dragging the time table horizontally
+  dragXMultiplier: 1,
+
+  // The multiplier to use with navigateAmount when dragging the time table vertically
+  dragYMultiplier: 1,
+
+  // selected event
+  // 0 for first event, -1 to disable
+  selectedEvent: 0,
+
+  // if the time table should shift when an event is selected
+  shiftOnEventSelect: true,
+
+  // If the window should scroll to the event display box on event selection (only applies if the time table height is greater than the window height)
+  scrollToDisplayBox: true,
+
+  // jQuery object to use for the event display box
+  customEventDisplay: null,
+
+  // or '<a href="https://www.jqueryscript.net/time-clock/">date</a>'
+  timeType: 'year',
+
+  // receives the lowercase suffix string and returns a formatted string
+  timeSuffixFunction: s => ' ' + s[0].toUpperCase() + s[1].toUpperCase(),
+
+  // start/end time
+  startTime: 1900,
+  endTime: 2020,
+
+  // the amount of time markers to use
+  // 0 to calculate from startTime, endTime, and markerIncrement
+  markerAmount: 0,
+
+  // the amount of time between each marker
+  markerIncrement: 10,
+
+  // width of marker
+  markerWidth: 100,
+
+  controlText: {
+    navLeft: 'Move Left',
+    navRight: 'Move Right',
+    drag: 'Drag',
+    eventLeft: 'Previous Event',
+    eventRight: 'Next Event',
+  }
+
+});
 
 //from tutorial "https://www.svennerberg.com/2012/03/adding-multiple-markers-to-google-maps-from-json/"
+
+// timeline plugin https://www.jqueryscript.net/time-clock/Timeline-Slider-jQuery-Timespace.html
