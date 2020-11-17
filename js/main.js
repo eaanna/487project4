@@ -51,6 +51,7 @@ items.map(key => {
 
 
 function initMap() {
+  //make a new map
   console.log(items.length);
   myMap = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 39.8282, lng: -97 },
@@ -58,9 +59,10 @@ function initMap() {
   });
   console.log(items);
   console.log(teams.teamLat);
+
+  // for each item in the object, make a marker and fill with content
   for (var i = 0; i < teams.teamLat.length; i++) {
     latLng = new google.maps.LatLng(teams.teamLat[i], teams.teamLong[i]);
-    // Creating a marker and putting it on the map
     var marker = new google.maps.Marker({
       position: latLng,
       map: myMap,
@@ -68,6 +70,7 @@ function initMap() {
       title: teams.teamName[i]
     });
 
+    // making natl and amer. leagues have different markers
     if (teams.teamLeague[i] === "National League") {
       marker.icon = 'img/marker2.png';
     } else {
@@ -76,7 +79,6 @@ function initMap() {
 
     // Attaching a click event to the current marker
     (function (marker, teams) {
-      // console.log(teams.teamName[i]);
 
       var modalContent = teams.teamName[i];
       modalContent = modalContent.replace(/\s/g, "");
@@ -94,16 +96,17 @@ function initMap() {
       html += '</div>';
 
 
+      // the popup
       var infoWindow = new google.maps.InfoWindow({
         content: html
       });
       google.maps.event.addListener(marker, "click", function (e) {
-        //   infoWindow.setContent(teams.teamName[i]);
         infoWindow.open(map, marker);
         console.log(marker);
 
       });
 
+      //on click open modal
       $(function () {
         var dialog = $(modalContent).dialog();
         //$('a.image_links').on('click', function(e){
@@ -119,7 +122,7 @@ function initMap() {
   
       })
 
-    })(marker, teams);
+    })(marker, teams);  //END of click event/CLOSURE
 
     // $('#' + modalContent).append(html);
 
@@ -131,8 +134,9 @@ function initMap() {
        $('#' + modalContent).modal('show');
      } */
 
-  }
-}
+  } //END of LOOP
+
+} //END of initMap
 
 
 //$('.modal-body').html(test);
@@ -140,7 +144,7 @@ function initMap() {
 
 
 
-
+//dataTable
 $('#table1').DataTable({
   "ajax": 'mlbteams2.json',
   "columns": [
@@ -153,9 +157,12 @@ $('#table1').DataTable({
   ]
 });
 
-$('#timeline').timespace({
+// loop to open modal for datatable 
 
-  // 24-hour timeline
+
+
+// timeline
+$('#timeline').timespace({
   data: {
     headings: [
       { start: 1900, end: 2020, title: 'Timeline of MLB Team Franchises' }
