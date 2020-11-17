@@ -3,18 +3,73 @@
 #map {
   height: 100vh;
 }
-
-
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
 
 #header {
   margin: 6%;
   margin-bottom: 2%;
   margin-top: 3%;
+  text-indent: 30px;
+  font-size: 13pt;
+  vertical-align: middle;
+}
+#titlebar {
+  display: flex;
+}
+#titlename {
+  padding-top: 7px;
+  font-size: 32pt;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#logo {
+  width: 115px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+#mapheader {
+  display: flex;
+  font-size: 12pt;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+#maptext {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#leaguelogo {
+  width: 500px;
+  height: auto;
+}
+
+.caption {
+  margin-top: 20px;
+  font-size: 12pt;
+  font-style: italic;
+  text-align: center;
+}
+
+#source {
+ padding-bottom: 70px;
+ padding-top: 25px;
 }
 
 /* the thing that pops up when the marker is clicked */
 #popup {
   font-size: 11pt;
+}
+
+#timelinetext {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1.8px solid #002D72;
 }
 
 
@@ -23,34 +78,41 @@ table {
   width: 100%;
 }
 
-
-
-
 /* bootstrap tabs */
+.nav-tabs {
+  border-bottom: 1.8px solid #002D72;
+}
+
 .nav-tabs > li > a {
-	border: 1.5px solid rgba(41, 41, 41, 0.2);
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
+	border: 1.7px solid #002D72;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
     color: rgba(41, 41, 41, 1);
-    padding: 10px;
-    padding-bottom: 0;
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-right: 1px;
+    border-bottom: 0.5px solid #002D72;
 }
 
 /*individual tabs*/
 li {
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	border-top-left-radius: 35px;
-	border-top-right-radius: 35px;
-	list-style-type: none;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+  list-style-type: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*text of active tab*/
 .nav-tabs > li.active > a {
-	color: blue;
-	border: 1.5px solid rgba(41, 41, 41, 0.2);
-	border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    padding: 10px;
-    padding-bottom: 0;
+	color: #D50032;
+	border: 1.7px solid #002D72;
+	border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid #002D72;
+    font-family: 'Roboto Condensed', sans-serif;
 }

@@ -6,6 +6,12 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/datatables.css">
   <link rel="stylesheet" href="css/_timespace.css">
   <link rel="stylesheet" href="css/_timespace.light.css">
@@ -14,7 +20,10 @@
 
 <body>
   <div id="header">
-    <h4>All Major League Baseball Teams</h4>
+    <div id="titlebar">
+      <img id="logo" src="img/mlblogo2.png" alt="logo of major league baseball">
+      <h4 id="titlename">MAJOR LEAGUE BASEBALL TEAMS</h4>
+    </div>
     <p>Baseball is one of America's longest active and most popular sports. Major League Baseball, as an organization,
       has existed since the early twentieth century and was a pioneer in the commercialization and organization of
       professional sports in the United States. Once the most popular sport in America, Baseball has remained the third
@@ -27,17 +36,24 @@
   <!-- The tabs -->
   <div class="container alldatatable">
     <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#mapcontainer" class="tabletabs tabs">Map</a></li>
-      <li><a data-toggle="tab" href="#listcontainer" class="tabletabs tabs">List</a></li>
+      <li class="active"><a data-toggle="tab" href="#mapcontainer" class="tabletabs tabs">MAP</a></li>
+      <li><a data-toggle="tab" href="#listcontainer" class="tabletabs tabs">LIST</a></li>
     </ul>
 
     <!-- MAP TAB -->
     <div class="tab-content">
       <div id="mapcontainer" class="tab-pane in active">
 
-        <p>This map represents the current 30 teams in the MLB, 29 in the United States and 1 in Canada. 15 teams belong to
-          the National League, and 15 belong to the American League. The combination of these two leagues create the modern
-          MLB organization, as it has remained since 1903.</p>
+        <div id="mapheader">
+          <img id="leaguelogo" src="img/natlleague.png" alt="national league logo">
+        <p id="maptext">This map represents the current 30 teams in the MLB; 29 in the United States and 1 in Canada. 15 teams belong
+          to
+          the National League, and 15 belong to the American League. The combination of these two leagues create the
+          modern
+          MLB organization, as it has remained since 1903. Click on each marker to learn more about each team.</p>
+        
+        <img id="leaguelogo" src="img/amerleague.png" alt="american league logo">
+      </div>
 
         <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -50,7 +66,7 @@
                 <h4 class="modal-title">Modal Header</h4>
               </div>
               <div class="modal-body">
-                
+
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -62,15 +78,17 @@
 
         <div id="map"></div>
 
-        <p>Timeline</p>
+        <p id="timelinetext" class="caption">This timeline displays the length of each team franchise's existence in the MLB organization. Use the arrows or drag and click the timeline to see more information about the team. The timeline can be dragged in all four directions. Some teams may have shared names in their history, but these names were reused by different franchises at different points in time. Changes in team name and city location is mostly due to popularity and ownership changes.</p>
         <div id="timeline"></div>
+        <p  id="source" class="caption">Information sourced from Encyclopedia Brittanica and Wikimedia; coordinates sourced from Wikipedia and mapped through the Google Maps API.</p>
 
       </div>
 
 
       <!-- LIST TAB -->
       <div id="listcontainer" class="tab-pane">
-        <p>This table contains all thirty teams included in the map.</p>
+        <p class="caption">This table contains all thirty teams included in the map, including their name, city, league, and coordinates.</p>
+        <p class="caption">Click on a row to see a popup to learn more about the team.</p>
         <table id="table1" class="display">
           <thead>
             <tr>
@@ -121,6 +139,6 @@ location data (coordinates of stadiums)
 https://en.wikipedia.org/wiki/Major_League_Baseball#Relocation_and_expansion
 https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums
 
-images all have CC licenses
+images all have CC licenses from Wikimedia Commons
 
 -->
