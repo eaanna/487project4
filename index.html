@@ -44,62 +44,1477 @@
     <div class="tab-content">
       <div id="mapcontainer" class="tab-pane in active">
 
-        <div id="mapheader">
-          <img id="leaguelogo" src="img/natlleague.png" alt="national league logo">
-        <p id="maptext">This map represents the current 30 teams in the MLB; 29 in the United States and 1 in Canada. 15 teams belong
-          to
-          the National League, and 15 belong to the American League. The combination of these two leagues create the
-          modern
-          MLB organization, as it has remained since 1903. Click on each marker to learn more about each team.</p>
-        
-        <img id="leaguelogo" src="img/amerleague.png" alt="american league logo">
-      </div>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- MODALS -->
+        <div class="modals">
+          <!-- Atlanta Braves -->
+          <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Atlanta Braves</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Truist Park</p>
+                  <img src="img/truistpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
-
           </div>
+
+
+          <!-- Miami Marlins -->
+          <div id="myModal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Miami Marlins</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Marlins Park</p>
+                  <img src="img/marlinspark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New York Mets -->
+          <div id="myModal3" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"> New York Mets</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Citi Field</p>
+                  <img src="img/citifield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Philadelphia Phillies -->
+          <div id="myModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Philadelphia Phillies</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Citizens Bank Park</p>
+                  <img src="img/citizensbankpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Washington Nationals -->
+          <div id="myModal5" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Washington Nationals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Nationals Park</p>
+                  <img src="img/natlspark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicago Cubs -->
+          <div id="myModal6" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Chicago Cubs</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Wrigley Field</p>
+                  <img src="img/wrigleyfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cincinnati Reds -->
+          <div id="myModal7" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cincinnati Reds</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Great American Ballpark</p>
+                  <img src="img/greatballpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milwaukee Brewers -->
+          <div id="myModal8" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Milwaukee Brewers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Miller Park</p>
+                  <img src="img/millerpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pittsburgh Pirates -->
+          <div id="myModal9" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Pittsburgh Pirates</h4>
+                </div>
+                <div class="modal-body">
+                  <p>PNC Park</p>
+                  <img src="img/pncpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- St. Louis Cardinals -->
+          <div id="myModal10" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">St. Louis Cardinals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Busch Stadium</p>
+                  <img src="img/buschstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arizona Diamondbacks -->
+          <div id="myModal11" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Arizona Diamondbacks</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Chase Field</p>
+                  <img src="img/chasefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colorado Rockies -->
+          <div id="myModal12" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Colorado Rockies</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Coors Field</p>
+                  <img src="img/coorsfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Los Angeles Dodgers -->
+          <div id="myModal13" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Los Angeles Dodgers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Dodger Stadium</p>
+                  <img src="img/dodgerstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- San Diego Padres -->
+          <div id="myModal14" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">San Diego Padres</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Petco Park</p>
+                  <img src="img/petcopark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- San Fransisco Giants -->
+          <div id="myModal15" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">San Fransisco Giants</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oracle Park</p>
+                  <img src="img/oraclepark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Baltimore Orioles -->
+          <div id="myModal16" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Baltimore Orioles</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oriole Park</p>
+                  <img src="img/oriolepark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boston Red Sox -->
+          <div id="myModal17" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Boston Red Sox</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Fenway Park</p>
+                  <img src="img/fenwaypark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New York Yankees -->
+          <div id="myModal18" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">New York Yankees</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Yankee Stadium</p>
+                  <img src="img/yankeestadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tampa Bay Rays -->
+          <div id="myModal19" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Tampa Bay Rays</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Tropicana Field</p>
+                  <img src="img/tropicanafield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toronto Blue Jays -->
+          <div id="myModal20" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Toronto Blue Jays</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Rogers Centre</p>
+                  <img src="img/rogerscentre.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicago White Sox -->
+          <div id="myModal21" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Chicago White Sox</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Guaranteed Rate Field</p>
+                  <img src="img/guaranteedratefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cleveland Indians -->
+          <div id="myModal22" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cleveland Indians</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Progressive Field</p>
+                  <img src="img/progressivefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detroit Tigers -->
+          <div id="myModal23" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Detroit Tigers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Comerica Park</p>
+                  <img src="img/comericapark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kansas City Royals -->
+          <div id="myModal24" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Kansas City Royals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Kauffman Stadium</p>
+                  <img src="img/kauffmanstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minnesota Twins -->
+          <div id="myModal25" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Minnesota Twins</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Target Field</p>
+                  <img src="img/targetfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Houston Astros -->
+          <div id="myModal26" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Houston Astros</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Minutemaid Park</p>
+                  <img src="img/minutemaidpark.JPG" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Los Angeles Angels -->
+          <div id="myModal27" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Los Angeles Angels</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Angel Stadium</p>
+                  <img src="img/angelstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oakland Athletics -->
+          <div id="myModal28" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Oakland Athletics</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oakland Coliseum</p>
+                  <img src="img/oaklandcoliseum.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seattle Mariners -->
+          <div id="myModal29" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Seattle Mariners</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Safeco Field</p>
+                  <img src="img/safecofield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texas Rangers -->
+          <div id="myModal30" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Texas Rangers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Globe Life Field</p>
+                  <img src="img/globelifefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+
+        <div id="mapheader">
+          <img id="leaguelogo" src="img/natlleague.png" alt="national league logo">
+          <p id="maptext">This map represents the current 30 teams in the MLB; 29 in the United States and 1 in Canada.
+            15 teams belong
+            to
+            the National League, and 15 belong to the American League. The combination of these two leagues create the
+            modern
+            MLB organization, as it has remained since 1903. Click on each marker to learn more about each team.</p>
+
+          <img id="leaguelogo" src="img/amerleague.png" alt="american league logo">
+        </div>
+
+
+
 
         <div id="map"></div>
 
-        <p id="timelinetext" class="caption">This timeline displays the length of each team franchise's existence in the MLB organization. Use the arrows or drag and click the timeline to see more information about the team. The timeline can be dragged in all four directions. Some teams may have shared names in their history, but these names were reused by different franchises at different points in time. Changes in team name and city location is mostly due to popularity and ownership changes.</p>
+        <p id="timelinetext" class="caption">This timeline displays the length of each team franchise's existence in the
+          MLB organization. Use the arrows or drag and click the timeline to see more information about the team. The
+          timeline can be dragged in all four directions. Some teams may have shared names in their history, but these
+          names were reused by different franchises at different points in time. Changes in team name and city location
+          is mostly due to popularity and ownership changes.</p>
         <div id="timeline"></div>
-        <p  id="source" class="caption">Information sourced from Encyclopedia Brittanica and Wikimedia; coordinates sourced from Wikipedia and mapped through the Google Maps API.</p>
+        <p id="source" class="caption">Information sourced from Encyclopedia Brittanica and Wikimedia; coordinates
+          sourced from Wikipedia and mapped through the Google Maps API.</p>
 
       </div>
 
 
       <!-- LIST TAB -->
       <div id="listcontainer" class="tab-pane">
-        <p class="caption">This table contains all thirty teams included in the map, including their name, city, league, and coordinates.</p>
-        <p class="caption">Click on a row to see a popup to learn more about the team.</p>
-        <table id="table1" class="display">
+        <p class="caption">This table contains all thirty teams included in the map, including their name, city, league,
+          and coordinates.</p>
+        <p class="caption">Click on any row to see an image of the team's stadium.</p>
+
+        <!-- MODALS -->
+        <div class="modals">
+          <!-- Atlanta Braves -->
+          <div id="modal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Atlanta Braves</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Truist Park</p>
+                  <img src="img/truistpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Miami Marlins -->
+          <div id="modal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Miami Marlins</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Marlins Park</p>
+                  <img src="img/marlinspark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New York Mets -->
+          <div id="modal3" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"> New York Mets</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Citi Field</p>
+                  <img src="img/citifield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Philadelphia Phillies -->
+          <div id="modal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Philadelphia Phillies</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Citizens Bank Park</p>
+                  <img src="img/citizensbankpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Washington Nationals -->
+          <div id="modal5" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Washington Nationals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Nationals Park</p>
+                  <img src="img/natlspark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicago Cubs -->
+          <div id="modal6" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Chicago Cubs</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Wrigley Field</p>
+                  <img src="img/wrigleyfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cincinnati Reds -->
+          <div id="modal7" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cincinnati Reds</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Great American Ballpark</p>
+                  <img src="img/greatballpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milwaukee Brewers -->
+          <div id="modal8" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Milwaukee Brewers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Miller Park</p>
+                  <img src="img/millerpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pittsburgh Pirates -->
+          <div id="modal9" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Pittsburgh Pirates</h4>
+                </div>
+                <div class="modal-body">
+                  <p>PNC Park</p>
+                  <img src="img/pncpark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- St. Louis Cardinals -->
+          <div id="modal10" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">St. Louis Cardinals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Busch Stadium</p>
+                  <img src="img/buschstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arizona Diamondbacks -->
+          <div id="modal11" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Arizona Diamondbacks</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Chase Field</p>
+                  <img src="img/chasefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colorado Rockies -->
+          <div id="modal12" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Colorado Rockies</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Coors Field</p>
+                  <img src="img/coorsfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Los Angeles Dodgers -->
+          <div id="modal13" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Los Angeles Dodgers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Dodger Stadium</p>
+                  <img src="img/dodgerstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- San Diego Padres -->
+          <div id="modal14" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">San Diego Padres</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Petco Park</p>
+                  <img src="img/petcopark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- San Fransisco Giants -->
+          <div id="modal15" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">San Fransisco Giants</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oracle Park</p>
+                  <img src="img/oraclepark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Baltimore Orioles -->
+          <div id="modal16" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Baltimore Orioles</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oriole Park</p>
+                  <img src="img/oriolepark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boston Red Sox -->
+          <div id="modal17" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Boston Red Sox</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Fenway Park</p>
+                  <img src="img/fenwaypark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New York Yankees -->
+          <div id="modal18" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">New York Yankees</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Yankee Stadium</p>
+                  <img src="img/yankeestadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tampa Bay Rays -->
+          <div id="modal19" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Tampa Bay Rays</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Tropicana Field</p>
+                  <img src="img/tropicanafield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toronto Blue Jays -->
+          <div id="modal20" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Toronto Blue Jays</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Rogers Centre</p>
+                  <img src="img/rogerscentre.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicago White Sox -->
+          <div id="modal21" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Chicago White Sox</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Guaranteed Rate Field</p>
+                  <img src="img/guaranteedratefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cleveland Indians -->
+          <div id="modal22" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cleveland Indians</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Progressive Field</p>
+                  <img src="img/progressivefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detroit Tigers -->
+          <div id="modal23" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Detroit Tigers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Comerica Park</p>
+                  <img src="img/comericapark.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kansas City Royals -->
+          <div id="modal24" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Kansas City Royals</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Kauffman Stadium</p>
+                  <img src="img/kauffmanstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minnesota Twins -->
+          <div id="modal25" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Minnesota Twins</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Target Field</p>
+                  <img src="img/targetfield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Houston Astros -->
+          <div id="modal26" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Houston Astros</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Minutemaid Park</p>
+                  <img src="img/minutemaidpark.JPG" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Los Angeles Angels -->
+          <div id="modal27" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Los Angeles Angels</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Angel Stadium</p>
+                  <img src="img/angelstadium.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oakland Athletics -->
+          <div id="modal28" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Oakland Athletics</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Oakland Coliseum</p>
+                  <img src="img/oaklandcoliseum.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seattle Mariners -->
+          <div id="modal29" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Seattle Mariners</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Safeco Field</p>
+                  <img src="img/safecofield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texas Rangers -->
+          <div id="modal30" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Texas Rangers</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Globe Life Field</p>
+                  <img src="img/globelifefield.jpg" alt="truist park">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TABLE -->
+        <table class="table table-bordered table-hover table-condensed">
           <thead>
             <tr>
-              <th>Team</th>
-              <th>City</th>
-              <th>Region</th>
-              <th>League</th>
-              <th>Latitude</th>
-              <th>Longitude</th>
+              <th title="Field #1">Name</th>
+              <th title="Field #2">City</th>
+              <th title="Field #3">Region</th>
+              <th title="Field #4">League</th>
+              <th title="Field #5">Latitude</th>
+              <th title="Field #6">Longitude</th>
+              <th title="Field #7">Stadium</th>
             </tr>
           </thead>
+          <tbody>
+            <tr class="trigger" data-toggle="modal" data-target="#modal1">
+              <td>Atlanta Braves</td>
+              <td>Cumberland, GA</td>
+              <td>East</td>
+              <td>National League</td>
+              <td>33.89</td>
+              <td>-84.468</td>
+              <td>Truist Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal2">
+              <td>Miami Marlins</td>
+              <td>Miami, FL</td>
+              <td>East</td>
+              <td>National League</td>
+              <td>25.778056</td>
+              <td>-80.219722</td>
+              <td>Marlins Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal3">
+              <td>New York Mets</td>
+              <td>New York, NY</td>
+              <td>East</td>
+              <td>National League</td>
+              <td>40.756944</td>
+              <td>-73.845833</td>
+              <td>Citi Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal4">
+              <td>Philadelphia Phillies</td>
+              <td>Philadelphia, PA</td>
+              <td>East</td>
+              <td>National League</td>
+              <td>39.905833</td>
+              <td>-75.166389</td>
+              <td>Citizens Bank Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal5">
+              <td>Washington Nationals</td>
+              <td>Washington, DC</td>
+              <td>East</td>
+              <td>National League</td>
+              <td>38.872778</td>
+              <td>-77.0075</td>
+              <td>Nationals Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal6">
+              <td>Chicago Cubs</td>
+              <td>Chicago, IL</td>
+              <td>Central</td>
+              <td>National League</td>
+              <td>41.948038</td>
+              <td>-87.65568</td>
+              <td>Wrigley Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal7">
+              <td>Cincinnati Reds</td>
+              <td>Cincinnati, OH</td>
+              <td>Central</td>
+              <td>National League</td>
+              <td>39.0975</td>
+              <td>-84.506667</td>
+              <td>Great American Ballpark</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal8">
+              <td>Milwaukee Brewers</td>
+              <td>Milwaukee, WI</td>
+              <td>Central</td>
+              <td>National League</td>
+              <td>43.028333</td>
+              <td>-87.971111</td>
+              <td>Miller Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal9">
+              <td>Pittsburgh Pirates</td>
+              <td>Pittsburgh, PA</td>
+              <td>Central</td>
+              <td>National League</td>
+              <td>40.446944</td>
+              <td>-80.005833</td>
+              <td>PNC Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal10">
+              <td>St. Louis Cardinals</td>
+              <td>St. Louis, MO</td>
+              <td>Central</td>
+              <td>National League</td>
+              <td>38.6225</td>
+              <td>-90.193056</td>
+              <td>Busch Stadium</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal11">
+              <td>Arizona Diamondbacks</td>
+              <td>Phoenix, AZ</td>
+              <td>West</td>
+              <td>National League</td>
+              <td>33.445278</td>
+              <td>-112.066944</td>
+              <td>Chase Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal12">
+              <td>Colorado Rockies</td>
+              <td>Denver, CO</td>
+              <td>West</td>
+              <td>National League</td>
+              <td>39.756111</td>
+              <td>-104.994167</td>
+              <td>Coors Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal13">
+              <td>Los Angeles Dodgers</td>
+              <td>Los Angeles, CA</td>
+              <td>West</td>
+              <td>National League</td>
+              <td>34.073611</td>
+              <td>-118.24</td>
+              <td>Dodger Stadium</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal14">
+              <td>San Diego Padres</td>
+              <td>San Diego, CA</td>
+              <td>West</td>
+              <td>National League</td>
+              <td>32.7073</td>
+              <td>-117.1566</td>
+              <td>Petco park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal15">
+              <td>San Francisco Giants</td>
+              <td>San Francisco, CA</td>
+              <td>West</td>
+              <td>National League</td>
+              <td>37.778611</td>
+              <td>-122.389167</td>
+              <td>Oracle Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal16">
+              <td>Baltimore Orioles</td>
+              <td>Baltimore, MD</td>
+              <td>East</td>
+              <td>American League</td>
+              <td>39.283889</td>
+              <td>-76.621667</td>
+              <td>Oriole Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal17">
+              <td>Boston Red Sox</td>
+              <td>Boston, MA</td>
+              <td>East</td>
+              <td>American League</td>
+              <td>42.34625</td>
+              <td>-71.09775</td>
+              <td>Fenway Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal18">
+              <td>New York Yankees</td>
+              <td>New York, NY</td>
+              <td>East</td>
+              <td>American League</td>
+              <td>40.829167</td>
+              <td>-73.926389</td>
+              <td>Yankee Stadium</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal19">
+              <td>Tampa Bay Rays</td>
+              <td>St. Petersburg, FL</td>
+              <td>East</td>
+              <td>American League</td>
+              <td>27.768333</td>
+              <td>-82.653333</td>
+              <td>Tropicana Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal20">
+              <td>Toronto Blue Jays</td>
+              <td>Toronto, ON</td>
+              <td>East</td>
+              <td>American League</td>
+              <td>43.641389</td>
+              <td>-79.389167</td>
+              <td>Rogers Centre</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal21">
+              <td>Chicago White Sox</td>
+              <td>Chicago, IL</td>
+              <td>Central</td>
+              <td>American League</td>
+              <td>41.83</td>
+              <td>-87.633889</td>
+              <td>Guaranteed Rate Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal22">
+              <td>Cleveland Indians</td>
+              <td>Cleveland, OH</td>
+              <td>Central</td>
+              <td>American League</td>
+              <td>41.495833</td>
+              <td>-81.685278</td>
+              <td>Progressive Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal23">
+              <td>Detroit Tigers</td>
+              <td>Detroit, MI</td>
+              <td>Central</td>
+              <td>American League</td>
+              <td>42.339167</td>
+              <td>-83.048611</td>
+              <td>Comerica Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal24">
+              <td>Kansas City Royals</td>
+              <td>Kansas City, MO</td>
+              <td>Central</td>
+              <td>American League</td>
+              <td>39.051</td>
+              <td>-94.48</td>
+              <td>Kauffman Stadium</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal25">
+              <td>Minnesota Twins</td>
+              <td>Minneapolis, MN</td>
+              <td>Central</td>
+              <td>American League</td>
+              <td>44.981667</td>
+              <td>-93.278333</td>
+              <td>Target Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal26">
+              <td>Houston Astros</td>
+              <td>Houston, TX</td>
+              <td>West</td>
+              <td>American League</td>
+              <td>29.756944</td>
+              <td>-95.355556</td>
+              <td>Minutemaid Park</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal27">
+              <td>Los Angeles Angels</td>
+              <td>Anaheim, CA</td>
+              <td>West</td>
+              <td>American League</td>
+              <td>33.800278</td>
+              <td>-117.882778</td>
+              <td>Angel Stadium</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal28">
+              <td>Oakland Athletics</td>
+              <td>Oakland, CA</td>
+              <td>West</td>
+              <td>American League</td>
+              <td>37.751667</td>
+              <td>-122.200556</td>
+              <td>Oakland Coliseum</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal29">
+              <td>Seattle Mariners</td>
+              <td>Seattle, WA</td>
+              <td>West</td>
+              <td>American League</td>
+              <td>47.591</td>
+              <td>-122.333</td>
+              <td>Safeco Field</td>
+            </tr>
+            <tr class="trigger" data-toggle="modal" data-target="#modal30">
+              <td>Texas Rangers</td>
+              <td>Arlington, TX</td>
+              <td>West</td>
+              <td>American League</td>
+              <td>32.747361</td>
+              <td>-97.084167</td>
+              <td>Globe Life Field</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -108,7 +1523,11 @@
 
 
   <!-- (jQuery, popper, timespace plugin, bootstrap, polyfill, googlemaps, datatables plugin, main) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+    integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
