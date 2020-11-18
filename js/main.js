@@ -58,15 +58,15 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: latLng,
       map: myMap,
-      icon: 'img/marker2.png',
+      icon: 'img/amermarker2.png',
       title: teams.teamName[i]
     });
 
     // making natl and amer. leagues have different markers
     if (teams.teamLeague[i] === "National League") {
-      marker.icon = 'img/marker2.png';
+      marker.icon = 'img/natlmarker2.png';
     } else {
-      marker.icon = 'img/marker3.png';
+      marker.icon = 'img/amermarker2.png';
     }
 
     // Attaching a click event to the current marker
